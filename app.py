@@ -7,7 +7,8 @@ import os
 import json
 
 import pandas as pd
-from flask import Flask, jsonify, request
+# from flask import Flask, jsonify, request
+!pip install prophet
 from prophet.serialize import model_from_json, model_to_json
 
 # dt.datetime.strptime('2021-07-24',format='')

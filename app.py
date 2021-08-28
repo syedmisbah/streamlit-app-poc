@@ -37,5 +37,5 @@ else:
         if(st.button(label='Predict'))==True:
             response = requests.post('http://127.0.0.1:5000/v0/model/predict')
             json_res = json.loads(response.json())
-            df_res = pd.DataFrame.from_dict(json_res)\
+            df_res = pd.DataFrame.from_dict(json_res)
             st.write(df_res)
